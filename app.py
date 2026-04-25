@@ -102,7 +102,7 @@ def get_system(mode):
 # ─────────────────────────────────────────────
 def call_gemini(user_prompt, history, mode):
     # 안정적인 v1 API 경로 사용
-    url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1/models/gemini-3-flash-preview:generateContent?key={GEMINI_API_KEY}"
 
     gemini_history = []
     for m in history[-6:]: # 최근 대화 요약 전달
